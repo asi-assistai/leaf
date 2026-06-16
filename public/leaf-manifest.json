@@ -1,0 +1,22 @@
+{
+  "name": "Leaf Demo Workspace",
+  "detachable_widgets": [
+    {
+      "id": "stock-ticker",
+      "entry": "/leaf/stock-ticker",
+      "selector": "#widget-stock-ticker",
+      "mechanism": "remount",
+      "title": "Live Ticker",
+      "icon": "/leaf.svg",
+      "min_size": { "width": 320, "height": 220 },
+      "preferred_size": { "width": 460, "height": 360 },
+      "max_size": { "width": 900, "height": 720 },
+      "resizable": true,
+      "always_on_top": false,
+      "state_channel": "ticker-sync",
+      "requires": ["auth"],
+      "orphan_policy": "persist",
+      "snap_zones": ["right", "bottom"]
+    }
+  ]
+}
